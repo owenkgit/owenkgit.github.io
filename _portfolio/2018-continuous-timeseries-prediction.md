@@ -1,6 +1,6 @@
 ---
 title: "Continuous Time-series Prediction/Classification"
-excerpt: "Contributing to B2B & B2C AI projects for healthcare early prediction systems<br/><img src='/images/500x300.png' style='max-width:100%; height:auto;'>"
+excerpt: "Contributing to B2B & B2C AI projects for healthcare early prediction systems<br/><img src='/images/vuno5.png' style='max-width:100%; height:auto;'>"
 collection: portfolio
 ---
 

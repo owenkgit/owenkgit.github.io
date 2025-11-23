@@ -1,6 +1,6 @@
 ---
 title: "Subject-Independent Brain-Computer Interface"
-excerpt: "BCI system that can be used without individual calibration procedures<br/><img src='/images/500x300.png' style='max-width:100%; height:auto;'>"
+excerpt: "BCI system that can be used without individual calibration procedures<br/><img src='/images/zerocalibration.png' style='max-width:100%; height:auto;'>"
 collection: portfolio
 ---
 

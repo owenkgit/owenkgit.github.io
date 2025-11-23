@@ -1,6 +1,6 @@
 ---
 title: "Automated Learning System Project Contribution"
-excerpt: "Creating AutoML system based on RL in the field of biosignals<br/><img src='/images/500x300.png' style='max-width:100%; height:auto;'>"
+excerpt: "Creating AutoML system based on RL in the field of biosignals<br/><img src='/images/automl.png' style='max-width:100%; height:auto;'>"
 collection: portfolio
 ---
 
