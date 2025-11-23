@@ -1,0 +1,107 @@
+/* Custom styles for improved UX/UI */
+
+/* Better spacing for main content */
+.page__content {
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+/* Improve publication entries */
+.page__content div[style*="margin-bottom"] {
+  padding: 1.2em;
+  background: #f8f9fa;
+  border-left: 4px solid #0066cc;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.page__content div[style*="margin-bottom"]:hover {
+  background: #f0f2f5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transform: translateX(4px);
+}
+
+/* Section headers */
+.page__content h2 {
+  color: #2c3e50;
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.page__content h3 {
+  color: #34495e;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+
+/* Horizontal rule styling */
+.page__content hr {
+  border: none;
+  border-top: 2px solid #e1e4e8;
+  margin: 2.5em 0;
+}
+
+/* Link styling */
+.page__content a {
+  color: #0066cc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.page__content a:hover {
+  color: #0052a3;
+  border-bottom-color: #0052a3;
+}
+
+/* List styling */
+.page__content ul {
+  margin-left: 0;
+  padding-left: 1.5em;
+}
+
+.page__content ul li {
+  margin-bottom: 0.6em;
+  line-height: 1.6;
+}
+
+/* Bold text in content */
+.page__content strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Improve sidebar */
+.sidebar {
+  background: #fff;
+}
+
+.author__name {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.author__bio {
+  font-size: 0.95em;
+  color: #666;
+}
+
+/* Navigation improvements */
+.greedy-nav a {
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page__content {
+    font-size: 1em;
+  }
+
+  .page__content div[style*="margin-bottom"] {
+    padding: 1em;
+  }
+}
