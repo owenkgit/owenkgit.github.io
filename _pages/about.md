@@ -9,21 +9,17 @@ redirect_from:
 
 I graduated with an MS from Carnegie Mellon University, focusing on robotics under the guidance of Prof. Jean Oh and Prof. Amir Barati Farimani.
 
-## Research Areas
-
-My research addresses rapid adaptation of Vision-Language-Action (VLA) models to new environments with minimal resources. I explore how natural language instructions—ranging from coarse directives like "be safe" to specific commands like "move 20% slower"—translate into physical action corrections through post-training alignment.
-
-Key areas include skill-based action tokenizers for stable long-horizon control, retrieval frameworks that autonomously gather robot data with minimal supervision, and test-time adaptation of robotic systems through human feedback.
+My research addresses rapid adaptation of Vision-Language-Action (VLA) models to new environments with minimal resources. I explore how natural language instructions—ranging from coarse directives like "be safe" to specific commands like "move 20% slower"—translate into physical action corrections through post-training alignment. Key areas include skill-based action tokenizers for stable long-horizon control, retrieval frameworks that autonomously gather robot data with minimal supervision, and test-time adaptation of robotic systems through human feedback.
 
 ## News
 
-**Dec 2025** Two arXiv preprints are forthcoming on runtime VLA adaptation and semantic skill construction.
+Dec 2025 Two arXiv preprints are forthcoming on runtime VLA adaptation and semantic skill construction.
 
-**Sep 2025** One paper RT-Cache: Training-Free Retrieval for Real-Time Manipulation got accepted to Humanoids 2025.
+Sep 2025 One paper RT-Cache: Training-Free Retrieval for Real-Time Manipulation got accepted to Humanoids 2025.
 
-**Jan 2025** Received CMU's Academic Excellence Fellowship.
+Jan 2025 Received CMU's Academic Excellence Fellowship.
 
-**Aug 2024** Awarded CMU's Department Head's Fellowship.
+Aug 2024 Awarded CMU's Department Head's Fellowship.
 
 ## Selected Publications
 
