@@ -1,48 +1,73 @@
-/* Custom styles - al-folio inspired design */
+/* Al-folio exact styling - matching Tom Silver's site */
 
-/* Typography matching al-folio */
+/* Global resets and base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #111;
+}
+
+/* Main content container - exactly 800px like al-folio */
+.page__content,
+.page {
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 15px;
+}
+
+/* Typography - exact al-folio styling */
 .page__content {
   font-size: 1rem;
   line-height: 1.5;
   color: #111;
-  max-width: 800px;
 }
 
 .page__content p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   line-height: 1.5;
 }
 
-/* Section headers */
-.page__content h2 {
+/* Headers - lighter weight like al-folio */
+.page__content h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #000;
+}
+
+.page__content h2 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  color: #000;
   border-bottom: none;
 }
 
 .page__content h3 {
-  color: #000;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 1.5rem;
   margin-bottom: 0.8rem;
+  color: #000;
 }
 
-/* News section - plain text format like Tom Silver */
-.page__content p {
-  margin-bottom: 0.5rem;
-}
-
-/* Link styling - al-folio style */
-.page__content a {
+/* Links - al-folio blue */
+.page__content a,
+a {
   color: #0076df;
   text-decoration: none;
 }
 
-.page__content a:hover {
+.page__content a:hover,
+a:hover {
   color: #0076df;
   text-decoration: underline;
 }
@@ -51,35 +76,89 @@
 .page__content ul {
   margin-left: 0;
   padding-left: 1.5em;
+  margin-bottom: 1rem;
 }
 
 .page__content ul li {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.25rem;
   line-height: 1.5;
 }
 
-/* Sidebar */
+.page__content ol {
+  margin-left: 0;
+  padding-left: 1.5em;
+}
+
+/* Remove bold from news dates */
+.page__content strong {
+  font-weight: 400;
+}
+
+/* Sidebar - match al-folio */
+.sidebar {
+  background: transparent !important;
+}
+
+.author__avatar img {
+  max-width: 200px;
+  border-radius: 0;
+}
+
 .author__name {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #000;
+  margin-bottom: 0.5rem;
 }
 
 .author__bio {
   font-size: 1rem;
   color: #828282;
   line-height: 1.5;
+  font-weight: 300;
 }
 
-/* Navigation */
+.author__urls {
+  font-size: 0.9rem;
+}
+
+/* Navigation - cleaner */
+.greedy-nav {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
 .greedy-nav a {
-  font-weight: 400;
+  font-weight: 300;
+  color: #111;
 }
 
-/* Responsive adjustments */
+.greedy-nav .visible-links a:hover {
+  color: #0076df;
+}
+
+/* Page title */
+.page__title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+/* Archive (publications) styling */
+.archive__item-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .page__content {
+  body {
     font-size: 0.9rem;
+  }
+
+  .page__content h1 {
+    font-size: 2rem;
   }
 
   .page__content h2 {
@@ -88,5 +167,9 @@
 
   .page__content h3 {
     font-size: 1.2rem;
+  }
+
+  .author__name {
+    font-size: 1.5rem;
   }
 }
