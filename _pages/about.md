@@ -7,57 +7,46 @@ redirect_from:
   - /about.html
 ---
 
-## About Me
+I graduated with an MS from Carnegie Mellon University, focusing on robotics under the guidance of Prof. Jean Oh and Prof. Amir Barati Farimani.
 
-I graduated with an **MS from Carnegie Mellon University**, focusing on robotics under the guidance of **Prof. Jean Oh** and **Prof. Amir Barati Farimani**.
+My research addresses rapid adaptation of Vision-Language-Action (VLA) models to new environments with minimal resources. I explore how natural language instructions—ranging from coarse directives like "be safe" to specific commands like "move 20% slower"—translate into physical action corrections through post-training alignment.
 
-### Research Focus
+Key areas include skill-based action tokenizers for stable long-horizon control, retrieval frameworks that autonomously gather robot data with minimal supervision, and test-time adaptation of robotic systems through human feedback.
 
-My research addresses **rapid adaptation of Vision-Language-Action (VLA) models** to new environments with minimal resources. I explore how natural language instructions—ranging from coarse directives like "be safe" to specific commands like "move 20% slower"—translate into physical action corrections through post-training alignment.
+## News
 
-Key areas include:
-- **Skill-based action tokenizers** for stable long-horizon control
-- **Retrieval frameworks** that autonomously gather robot data with minimal supervision
-- **Test-time adaptation** of robotic systems through human feedback
+**December 2025**: Started as a Robotics Research Scientist at [Dexterity](https://dexterity.ai/).
 
----
+**September 2025**: Two papers submitted to RSS 2026.
+
+**January 2025**: One paper accepted to [Humanoids 2025](https://2025.ieee-humanoids.org/).
+
+**August 2024**: Graduated from Carnegie Mellon University with an MS in Robotics.
 
 ## Selected Publications
 
-### In Preparation
+See my [full list of publications](/publications/) or [Google Scholar profile](https://scholar.google.com/citations?user=c4pZNFIAAAAJ&hl=en).
 
-<div style="margin-bottom: 1.5em;">
-  <strong style="font-size: 1.1em;">AdaptVLA: Test-time VLA Adaptation via Human</strong><br/>
-  <span style="color: #666;">O. Kwon, ... ,Jean Oh</span><br/>
-  <em>RSS 2026 (In Preparation)</em>
-</div>
+**AdaptVLA: Test-time VLA Adaptation via Human Feedback**
+Owen Kwon, ..., Jean Oh
+*RSS 2026 (In Preparation)*
 
-<div style="margin-bottom: 1.5em;">
-  <strong style="font-size: 1.1em;">Skill-based Action Tokenizers for VLA</strong><br/>
-  <span style="color: #666;">O. Kwon*, A. Bucker*, ..., Jean Oh</span><br/>
-  <em>RSS 2026 (In Preparation)</em>
-</div>
+**Skill-based Action Tokenizers for Vision-Language-Action Models**
+Pablo Ortega Kral\*, Owen Kwon\*, Arthur Bucker, ..., Jean Oh
+*RSS 2026 (In Preparation)*
 
-### Published
+**RT-Cache: Training-Free Retrieval for Real-Time Robotic Manipulation**
+Owen Kwon, Abraham George, Alison Bartsch, Amir Barati Farimani
+*Humanoids 2025*
+[paper](https://arxiv.org/pdf/2505.09040)
 
-<div style="margin-bottom: 1.5em;">
-  <strong style="font-size: 1.1em;">RT-Cache: Training-Free Retrieval for Real-Time Robotic Manipulation</strong><br/>
-  <span style="color: #666;">O. Kwon, .., A.B. Farimani</span><br/>
-  <em>Humanoids 2025</em>
-  <span style="margin-left: 1em;">📄 <a href="https://arxiv.org/pdf/2505.09040">Paper</a></span>
-</div>
+**Unstructured Time-series Prediction/Classification: Graph Convolutional Networks for EHR Imputation**
+B.T. Lee\*, Owen Kwon\*, et al.
+*Critical Care Medicine, 2020*
 
-<div style="margin-bottom: 1.5em;">
-  <strong style="font-size: 1.1em;">Unstructured Time-series Prediction/Classification: Graph Convolutional Networks for EHR Imputation</strong><br/>
-  <span style="color: #666;">B.T. Lee*, O. Kwon*, et al.</span><br/>
-  <em>Critical Care Medicine, 2020</em>
-</div>
+**Subject-Independent Brain-Computer Interfaces Based on Deep Convolutional Neural Networks**
+Owen Kwon, ..., C. Guan, S.W. Lee
+*IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2019*
+[paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8897723)
 
-<div style="margin-bottom: 1.5em;">
-  <strong style="font-size: 1.1em;">Subject-Independent Brain-Computer Interfaces via Deep CNNs</strong><br/>
-  <span style="color: #666;">O. Kwon, .. C. Guan, S.W. Lee</span><br/>
-  <em>IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2019</em>
-  <span style="margin-left: 1em;">📄 <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8897723">Paper</a></span>
-</div>
-
-<p style="margin-top: 2em;"><em>* denotes equal contribution</em></p>
+<p style="margin-top: 2em; font-size: 0.9em;"><em>* denotes equal contribution</em></p>
