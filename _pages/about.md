@@ -9,19 +9,21 @@ redirect_from:
 
 I graduated with an MS from Carnegie Mellon University, focusing on robotics under the guidance of Prof. Jean Oh and Prof. Amir Barati Farimani.
 
+## Research Areas
+
 My research addresses rapid adaptation of Vision-Language-Action (VLA) models to new environments with minimal resources. I explore how natural language instructions—ranging from coarse directives like "be safe" to specific commands like "move 20% slower"—translate into physical action corrections through post-training alignment.
 
 Key areas include skill-based action tokenizers for stable long-horizon control, retrieval frameworks that autonomously gather robot data with minimal supervision, and test-time adaptation of robotic systems through human feedback.
 
 ## News
 
-**December 2025**: Started as a Robotics Research Scientist at [Dexterity](https://dexterity.ai/).
+**Dec 2025** Two arXiv preprints are forthcoming on runtime VLA adaptation and semantic skill construction.
 
-**September 2025**: Two papers submitted to RSS 2026.
+**Sep 2025** One paper RT-Cache: Training-Free Retrieval for Real-Time Manipulation got accepted to Humanoids 2025.
 
-**January 2025**: One paper accepted to [Humanoids 2025](https://2025.ieee-humanoids.org/).
+**Jan 2025** Received CMU's Academic Excellence Fellowship.
 
-**August 2024**: Graduated from Carnegie Mellon University with an MS in Robotics.
+**Aug 2024** Awarded CMU's Department Head's Fellowship.
 
 ## Selected Publications
 
