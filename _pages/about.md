@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: MS <a href="https://www.cmu.edu/">Carnegie Mellon University</a>
 
 profile:
   align: right
