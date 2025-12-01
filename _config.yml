@@ -225,21 +225,10 @@ keep_files:
   - CNAME
   - .nojekyll
 
-# Plug-ins
+# Plug-ins (GitHub Pages compatible only)
 plugins:
-  - jekyll-archives
-  - jekyll-email-protect
   - jekyll-feed
-  - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
-  - jekyll-link-attributes
-  - jekyll-minifier
-  - jekyll-paginate-v2
-  - jekyll/scholar
   - jekyll-sitemap
-  - jekyll-toc
-  - jekyll-twitter-plugin
   - jemoji
 
 # Sitemap settings
