@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: MS in Robotics, <a href="https://www.ri.cmu.edu/">Carnegie Mellon University</a>
+subtitle: MS <a href="https://www.cmu.edu/">Carnegie Mellon University</a>
 
 profile:
   align: right
