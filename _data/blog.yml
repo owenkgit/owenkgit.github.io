@@ -1,0 +1,40 @@
+# External blog posts (Medium). Rendered by _includes/blog.liquid on the home page.
+- title: "On-Device Machine Learning: Shrinking Models for the Real World"
+  tag: On-Device ML
+  url: https://medium.com/@owen-k/on-device-machine-learning-shrinking-models-for-the-real-world-8710a340a390
+
+- title: "Inside the GPU: How I Optimized Transformer CUDA Kernels"
+  tag: LLM Systems
+  url: https://medium.com/@owen-k/inside-the-gpu-how-i-optimized-transformer-cuda-kernels-36361112888b
+
+- title: Walkthrough of Human-Robot Interaction
+  tag: HRI
+  url: https://medium.com/@owen-k/walkthrough-of-human-robot-interaction-99beac7ac5c0
+
+- title: "Preference-Based Reward Learning in Robotics: From Implicit Inference to Explicit Comparison"
+  tag: Reward Learning
+  url: https://medium.com/@owen-k/preference-based-reward-learning-in-robotics-from-implicit-inference-to-explicit-comparison-7103dbdd992f
+
+- title: Building a Robot Teleoperation Data Pipeline from Scratch
+  tag: Robot Data
+  url: https://medium.com/@owen-k/building-a-robot-teleoperation-data-pipeline-from-scratch-212399ab455e
+
+- title: Memory-Augmented Robots
+  tag: Robot Memory
+  url: https://medium.com/@owen-k/memory-augmented-robots-6efc180c8dbe
+
+- title: "VLA Models in Review: How Robot Policies Evolved"
+  tag: VLA
+  url: https://medium.com/@owen-k/deal-with-vla-model-rt-2-pi0-pi0-5-pi0-6-eeb9fc9d37be
+
+- title: How Do You Predict Cardiac Arrest Before It Happens?
+  tag: Medical AI
+  url: https://medium.com/@owen-k/how-do-you-predict-cardiac-arrest-before-it-happens-f6f7ef7f7340
+
+- title: Brain-Computer Interfaces
+  tag: BCI
+  url: https://medium.com/@owen-k/brain-computer-interfaces-ff7aaeab9523
+
+- title: "Building a Real-Time Talking Avatar: From Diffusion Latency to Flow Matching and Adaptive RAG"
+  tag: Generative AI
+  url: https://medium.com/@owen-k/building-a-real-time-talking-avatar-from-diffusion-latency-to-flow-matching-and-adaptive-rag-6da7d4e5532d
