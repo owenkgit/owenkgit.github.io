@@ -58,6 +58,18 @@ nav_order: 1
   </div>
 </div>
 
+<h2 class="year">2021</h2>
+
+<div class="row" style="margin-bottom: 2em;">
+  <div class="col-sm-3">
+    <img src="/assets/img/Continuous Time-series Prediction_dewimage.png" width="100%">
+  </div>
+  <div class="col-sm-9">
+    <div class="title"><strong>Continuous Time-series Prediction/Classification</strong></div>
+    <div class="periodical"><em>Deep learning models (LSTM/GRU) for continuous time-series prediction and classification in medical applications, deployed for real-time clinical diagnostics.</em></div>
+  </div>
+</div>
+
 <h2 class="year">2020</h2>
 
 <div class="row" style="margin-bottom: 2em;">
@@ -84,6 +96,16 @@ nav_order: 1
     <div class="links">
       <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8897723" class="btn btn-sm z-depth-0" role="button">Paper</a>
     </div>
+  </div>
+</div>
+
+<div class="row" style="margin-bottom: 2em;">
+  <div class="col-sm-3">
+    <img src="/assets/img/opensource.png" width="100%">
+  </div>
+  <div class="col-sm-9">
+    <div class="title"><strong>BCI Open Source and Open Dataset</strong></div>
+    <div class="periodical"><em>Large-scale open-source EEG dataset (54 subjects) and preprocessing/benchmark tools for motor imagery classification, widely used by the BCI research community.</em></div>
   </div>
 </div>
 
