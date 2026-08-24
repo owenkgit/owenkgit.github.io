@@ -40,6 +40,14 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Blog -->
+    {% if site.data.blog %}
+      <h2>blog</h2>
+      <div style="margin-bottom: 2.5rem;">
+        {% include blog.liquid limit=6 %}
+      </div>
+    {% endif %}
+
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>news</h2>
@@ -164,14 +172,6 @@ layout: default
         </div>
       </div>
     </div>
-
-    <!-- Blog -->
-    {% if site.data.blog %}
-      <h2>blog</h2>
-      <div style="margin-bottom: 2.5rem;">
-        {% include blog.liquid limit=6 %}
-      </div>
-    {% endif %}
 
     <!-- Social -->
     {% if page.social %}
