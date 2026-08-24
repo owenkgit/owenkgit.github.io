@@ -11,7 +11,10 @@ nav_order: 2
 <h2 class="year">2026</h2>
 
 <!-- Auto Simulation -->
-<div class="row" style="margin-bottom: 3em;">
+<div class="row project-item" id="auto-simulation">
+  <div class="col-sm-4">
+    <img src="/assets/img/autosim_demo.gif" width="100%">
+  </div>
   <div class="col-sm-8">
     <h4>Automated Robot Simulation Pipeline</h4>
     <p><strong>Overview:</strong> An automated robot simulation pipeline where an agent monitors simulation results, analyzes failed episodes, identifies underlying causes, and continuously updates VLM instructions to improve future performance. Inspired by Andrej Karpathy's vision of automated AI research.</p>
@@ -23,7 +26,7 @@ nav_order: 2
 </div>
 
 <!-- Robot Learning -->
-<div class="row" style="margin-bottom: 3em;">
+<div class="row project-item" id="robot-learning">
   <div class="col-sm-8">
     <h4>Robot Learning: Preference-Based Reward Learning &amp; Human-Robot Interaction</h4>
     <p><strong>Overview:</strong> Two-part series from CMU's Human-Robot Interaction course (16-867) on how robots learn what people want. Part one covers inverse reinforcement learning: recovering a human's hidden preference vector from demonstrated trajectories via the Boltzmann observation model and Bayesian (MAP) inference. Part two moves to preference-based reward learning, training a reward model directly from pairwise trajectory comparisons using the Bradley-Terry model &mdash; the same objective underlying RLHF &mdash; instead of relying on noisy absolute ratings or expert demonstrations.</p>
@@ -39,7 +42,10 @@ nav_order: 2
 <h2 class="year">2025</h2>
 
 <!-- LLM System -->
-<div class="row" style="margin-bottom: 3em;">
+<div class="row project-item" id="llm-system">
+  <div class="col-sm-4">
+    <img src="/assets/img/llmsystem.png" width="100%">
+  </div>
   <div class="col-sm-8">
     <h4>LLM System: Optimizing Transformer CUDA Kernels</h4>
     <p><strong>Overview:</strong> Built during CMU's LLM Systems course, this project digs into what happens inside the GPU during transformer inference &mdash; how memory moves, how threads collaborate, and how kernels are fused. Implemented custom CUDA kernels for Softmax and LayerNorm using warp-level reduction, integrated FlashAttention with CUDA-based tiling into MiniTorch, and built a multi-teacher knowledge distillation pipeline.</p>
@@ -54,7 +60,10 @@ nav_order: 2
 <h2 class="year">2024</h2>
 
 <!-- On-Device ML -->
-<div class="row" style="margin-bottom: 3em;">
+<div class="row project-item" id="on-device">
+  <div class="col-sm-4">
+    <img src="/assets/img/on-device.png" width="100%">
+  </div>
   <div class="col-sm-8">
     <h4>On-Device Machine Learning: Shrinking Models for the Real World</h4>
     <p><strong>Overview:</strong> Based on CMU's On-Device Machine Learning course, this project explores how quantization, pruning, and hardware constraints shape what actually runs on the edge. Benchmarked model compression strategies (dynamic quantization, static pruning) against a roofline model to identify memory- vs. compute-bound bottlenecks, deploying and profiling YOLOv5s on an NVIDIA Jetson Nano under tight memory budgets.</p>
@@ -67,9 +76,9 @@ nav_order: 2
 </div>
 
 <!-- LLM Agent Applications -->
-<div class="row" style="margin-bottom: 3em;">
+<div class="row project-item">
   <div class="col-sm-4">
-    <img src="/assets/img/voice_assistant.png" width="100%" style="border: 1px solid #ddd;">
+    <img src="/assets/img/voice_assistant.png" width="100%">
   </div>
   <div class="col-sm-8">
     <h4>LLM Agent Applications</h4>
@@ -91,9 +100,9 @@ nav_order: 2
 </div>
 
 <!-- Data Ingestion and AI Infrastructure -->
-<div class="row" style="margin-bottom: 3em;">
+<div class="row project-item">
   <div class="col-sm-4">
-    <img src="/assets/img/system_architecture.png" width="100%" style="border: 1px solid #ddd;">
+    <img src="/assets/img/system_architecture.png" width="100%">
   </div>
   <div class="col-sm-8">
     <h4>Data Ingestion and AI Infrastructure</h4>
@@ -113,9 +122,9 @@ nav_order: 2
 <h2 class="year">2023</h2>
 
 <!-- Virtual Assistant -->
-<div class="row" style="margin-bottom: 3em;">
+<div class="row project-item">
   <div class="col-sm-4">
-    <img src="/assets/img/talkmotion.ai.png" width="100%" style="border: 1px solid #ddd;">
+    <img src="/assets/img/talkmotion.ai.png" width="100%">
   </div>
   <div class="col-sm-8">
     <h4>Virtual Assistant - 3D Realistic & Conversational Avatar</h4>
@@ -135,9 +144,9 @@ nav_order: 2
 <h2 class="year">2021</h2>
 
 <!-- Automated Learning System -->
-<div class="row" style="margin-bottom: 3em;">
+<div class="row project-item">
   <div class="col-sm-4">
-    <img src="/assets/img/automl.png" width="100%" style="border: 1px solid #ddd;">
+    <img src="/assets/img/automl.png" width="100%">
   </div>
   <div class="col-sm-8">
     <h4>Automated Learning System Project Contribution</h4>
