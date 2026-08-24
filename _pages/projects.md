@@ -8,6 +8,20 @@ nav_order: 2
 
 <div class="projects">
 
+<h2 class="year">2026</h2>
+
+<!-- Auto Simulation -->
+<div class="row" style="margin-bottom: 3em;">
+  <div class="col-sm-8">
+    <h4>Automated Robot Simulation Pipeline</h4>
+    <p><strong>Overview:</strong> An automated robot simulation pipeline where an agent monitors simulation results, analyzes failed episodes, identifies underlying causes, and continuously updates VLM instructions to improve future performance. Inspired by Andrej Karpathy's vision of automated AI research.</p>
+    <p><strong>Timeline:</strong> 2026</p>
+    <div class="links">
+      <a href="https://github.com/owenk3/autosimulation" class="btn btn-sm z-depth-0" role="button">GitHub</a>
+    </div>
+  </div>
+</div>
+
 <h2 class="year">2024</h2>
 
 <!-- LLM Agent Applications -->
@@ -29,7 +43,7 @@ nav_order: 2
     <p><strong>Technologies:</strong> Python, Streamlit, OpenAI API</p>
     <p><strong>Timeline:</strong> September 2024 - January 2025</p>
     <div class="links">
-      <a href="https://github.com/Oyeon/ChatGPT-application-python" class="btn btn-sm z-depth-0" role="button">GitHub</a>
+      <a href="https://github.com/owenk3/ChatGPT-application-python" class="btn btn-sm z-depth-0" role="button">GitHub</a>
     </div>
   </div>
 </div>
