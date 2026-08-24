@@ -9,7 +9,7 @@
 
       <div class="blog-list">
         {% for post in group.posts %}
-          <a class="blog-card" href="{{ post.url }}" target="_blank" rel="noopener noreferrer">
+          <a class="blog-card" href="{{ post.url }}" target="_blank" rel="noopener noreferrer" title="{{ post.blurb }}">
             <span class="blog-title">{{ post.title }}</span>
             {% if post.blurb %}<span class="blog-blurb">{{ post.blurb }}</span>{% endif %}
             <i class="fa-solid fa-arrow-right blog-arrow"></i>
