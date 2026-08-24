@@ -41,6 +41,11 @@ body.sticky-bottom-footer {
 // News
 .news {
   font-size: 0.85rem;
+
+  th,
+  td {
+    font-size: 0.85rem;
+  }
 }
 
 // Publication thumbnails
