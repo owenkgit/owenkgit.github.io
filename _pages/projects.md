@@ -22,7 +22,49 @@ nav_order: 2
   </div>
 </div>
 
+<!-- Robot Learning -->
+<div class="row" style="margin-bottom: 3em;">
+  <div class="col-sm-8">
+    <h4>Robot Learning: Preference-Based Reward Learning &amp; Human-Robot Interaction</h4>
+    <p><strong>Overview:</strong> Two-part series from CMU's Human-Robot Interaction course (16-867) on how robots learn what people want. Part one covers inverse reinforcement learning: recovering a human's hidden preference vector from demonstrated trajectories via the Boltzmann observation model and Bayesian (MAP) inference. Part two moves to preference-based reward learning, training a reward model directly from pairwise trajectory comparisons using the Bradley-Terry model &mdash; the same objective underlying RLHF &mdash; instead of relying on noisy absolute ratings or expert demonstrations.</p>
+    <p><strong>Technologies:</strong> Inverse Reinforcement Learning, Bayesian Inference, Bradley-Terry Optimization, MetaWorld</p>
+    <p><strong>Timeline:</strong> 2026</p>
+    <div class="links">
+      <a href="https://medium.com/@owen-k/walkthrough-of-human-robot-interaction-99beac7ac5c0" class="btn btn-sm z-depth-0" role="button">Article: HRI Walkthrough</a>
+      <a href="https://medium.com/@owen-k/preference-based-reward-learning-in-robotics-from-implicit-inference-to-explicit-comparison-7103dbdd992f" class="btn btn-sm z-depth-0" role="button">Article: Preference-Based Reward Learning</a>
+    </div>
+  </div>
+</div>
+
+<h2 class="year">2025</h2>
+
+<!-- LLM System -->
+<div class="row" style="margin-bottom: 3em;">
+  <div class="col-sm-8">
+    <h4>LLM System: Optimizing Transformer CUDA Kernels</h4>
+    <p><strong>Overview:</strong> Built during CMU's LLM Systems course, this project digs into what happens inside the GPU during transformer inference &mdash; how memory moves, how threads collaborate, and how kernels are fused. Implemented custom CUDA kernels for Softmax and LayerNorm using warp-level reduction, integrated FlashAttention with CUDA-based tiling into MiniTorch, and built a multi-teacher knowledge distillation pipeline.</p>
+    <p><strong>Technologies:</strong> CUDA, GPU Kernel Optimization, FlashAttention, Knowledge Distillation</p>
+    <p><strong>Timeline:</strong> 2025</p>
+    <div class="links">
+      <a href="https://medium.com/@owen-k/inside-the-gpu-how-i-optimized-transformer-cuda-kernels-36361112888b" class="btn btn-sm z-depth-0" role="button">Article</a>
+    </div>
+  </div>
+</div>
+
 <h2 class="year">2024</h2>
+
+<!-- On-Device ML -->
+<div class="row" style="margin-bottom: 3em;">
+  <div class="col-sm-8">
+    <h4>On-Device Machine Learning: Shrinking Models for the Real World</h4>
+    <p><strong>Overview:</strong> Based on CMU's On-Device Machine Learning course, this project explores how quantization, pruning, and hardware constraints shape what actually runs on the edge. Benchmarked model compression strategies (dynamic quantization, static pruning) against a roofline model to identify memory- vs. compute-bound bottlenecks, deploying and profiling YOLOv5s on an NVIDIA Jetson Nano under tight memory budgets.</p>
+    <p><strong>Technologies:</strong> Quantization, Pruning, TensorRT, NVIDIA Jetson Nano, YOLOv5</p>
+    <p><strong>Timeline:</strong> 2024</p>
+    <div class="links">
+      <a href="https://medium.com/@owen-k/on-device-machine-learning-shrinking-models-for-the-real-world-8710a340a390" class="btn btn-sm z-depth-0" role="button">Article</a>
+    </div>
+  </div>
+</div>
 
 <!-- LLM Agent Applications -->
 <div class="row" style="margin-bottom: 3em;">

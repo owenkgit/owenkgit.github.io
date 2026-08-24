@@ -12,12 +12,10 @@
       {% assign show_toggle = true %}
     {% endif %}
 
-    {% if show_toggle %}<input type="checkbox" id="news-toggle" class="news-toggle-checkbox">{% endif %}
-
     <div class="table-responsive">
       <table class="table table-sm table-borderless">
-        {% for item in news %}
-          <tr {% if forloop.index > news_limit %}class="news-extra"{% endif %}>
+        {% for item in news limit: news_limit %}
+          <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if item.inline %}
@@ -32,10 +30,25 @@
     </div>
 
     {% if show_toggle %}
-      <label for="news-toggle" class="news-more">
-        <span class="news-more-show">show more <i class="fa-solid fa-chevron-down"></i></span>
-        <span class="news-more-hide">show less <i class="fa-solid fa-chevron-up"></i></span>
-      </label>
+      <details class="news-more">
+        <summary>show more</summary>
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless">
+            {% for item in news offset: news_limit %}
+              <tr>
+                <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+                <td>
+                  {% if item.inline %}
+                    {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                  {% else %}
+                    <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </table>
+        </div>
+      </details>
     {% endif %}
   {% else %}
     <p>No news so far...</p>
