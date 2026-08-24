@@ -26,36 +26,6 @@ nav_order: 1
   </div>
 </div>
 
-<div class="row" style="margin-bottom: 2em;">
-  <div class="col-sm-3">
-    <video width="100%" controls>
-      <source src="/assets/img/AdaptVLA_Test-time VLA Adaptation via Human Feedback_video.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="col-sm-9">
-    <div class="title"><strong>AdaptVLA: Test-time VLA Adaptation via Human Feedback</strong></div>
-    <div class="author">Owen Kwon, .., Jean Oh</div>
-    <div class="periodical"><em>Robotics: Science and Systems (RSS) 2026 — In preparation</em></div>
-    <div class="links">
-      <a href="https://adaptvla.github.io/" class="btn btn-sm z-depth-0" role="button">Website</a>
-    </div>
-  </div>
-</div>
-
-<div class="row" style="margin-bottom: 2em;">
-  <div class="col-sm-3">
-    <img src="/assets/img/Skill-based Action Tokenizers for VLA_image.png" width="100%">
-  </div>
-  <div class="col-sm-9">
-    <div class="title"><strong>Skill-based Action Tokenizers for VLA</strong></div>
-    <div class="author">Pablo Ortega Kral*, Owen Kwon*, Arthur Bucker, .., Jean Oh</div>
-    <div class="periodical"><em>Robotics: Science and Systems (RSS) 2026 — In preparation</em></div>
-    <div class="links">
-      <a href="https://skill-tokenizer.github.io/" class="btn btn-sm z-depth-0" role="button">Website</a>
-    </div>
-  </div>
-</div>
-
 <h2 class="year">2025</h2>
 
 <div class="row" style="margin-bottom: 2em;">
