@@ -13,6 +13,22 @@ nav_order: 1
 <div class="row" style="margin-bottom: 2em;">
   <div class="col-sm-3">
     <video width="100%" controls>
+      <source src="/assets/img/CorrectVLA_demo.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="col-sm-9">
+    <div class="title"><strong>Training-Free Action Correction for VLA Model Failures via Language Feedback</strong></div>
+    <div class="author">Owen Kwon, .., Jean Oh</div>
+    <div class="periodical"><em>arXiv 2026</em></div>
+    <div class="links">
+      <a href="https://correctvla.github.io/" class="btn btn-sm z-depth-0" role="button">Website</a>
+    </div>
+  </div>
+</div>
+
+<div class="row" style="margin-bottom: 2em;">
+  <div class="col-sm-3">
+    <video width="100%" controls>
       <source src="/assets/img/AdaptVLA_Test-time VLA Adaptation via Human Feedback_video.mp4" type="video/mp4">
     </video>
   </div>
