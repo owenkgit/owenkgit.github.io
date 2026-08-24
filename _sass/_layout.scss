@@ -257,86 +257,94 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 .blog-feed {
-  .blog-grid {
+  .blog-group + .blog-group {
+    margin-top: 1.75rem;
+  }
+
+  .blog-group-head {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.45rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid var(--global-divider-color);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+
+    i {
+      font-size: 0.85rem;
+      color: var(--global-theme-color);
+    }
+  }
+
+  .blog-count {
+    margin-left: auto;
+    padding: 0.05rem 0.45rem;
+    border-radius: 999px;
+    background-color: var(--global-code-bg-color);
+    font-size: 0.65rem;
+    letter-spacing: 0;
+  }
+
+  .blog-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 0.75rem;
+    gap: 0.4rem;
   }
 
   .blog-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    padding: 0.9rem 1rem;
-    border: 1px solid var(--global-divider-color);
-    border-left: 4px solid var(--global-theme-color);
+    position: relative;
+    display: block;
+    padding: 0.7rem 2rem 0.7rem 0.9rem;
+    border: 1px solid transparent;
     border-radius: 6px;
-    background-color: var(--global-card-bg-color);
     text-decoration: none;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
 
     &:hover {
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-      transform: translateY(-2px);
+      background-color: var(--global-card-bg-color);
+      border-color: var(--global-divider-color);
       text-decoration: none;
 
-      .blog-read {
+      .blog-title {
+        color: var(--global-theme-color);
+      }
+
+      .blog-arrow {
         opacity: 1;
+        transform: translate(0, -50%);
       }
     }
-  }
-
-  .blog-tag {
-    font-size: 0.65rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--global-theme-color);
   }
 
   .blog-title {
-    font-size: 0.9rem;
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 500;
     line-height: 1.35;
     color: var(--global-text-color);
+    transition: color 0.15s ease;
   }
 
-  .blog-read {
-    font-size: 0.7rem;
+  .blog-blurb {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.75rem;
+    line-height: 1.45;
     color: var(--global-text-color-light);
-    opacity: 0;
-    transition: opacity 0.2s ease;
   }
 
-  .blog-more {
-    margin-top: 0.75rem;
-
-    summary {
-      display: inline-block;
-      font-size: 0.75rem;
-      color: var(--global-theme-color);
-      cursor: pointer;
-      list-style: none;
-
-      &::-webkit-details-marker {
-        display: none;
-      }
-
-      &:hover {
-        text-decoration: underline;
-      }
-
-      &::after {
-        content: " ▾";
-      }
-    }
-
-    &[open] summary::after {
-      content: " ▴";
-    }
-
-    .blog-grid {
-      margin-top: 0.75rem;
-    }
+  .blog-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0.85rem;
+    font-size: 0.7rem;
+    color: var(--global-theme-color);
+    opacity: 0;
+    transform: translate(-4px, -50%);
+    transition: opacity 0.15s ease, transform 0.15s ease;
   }
 }
 

@@ -1,34 +1,21 @@
-{% assign posts = site.data.blog %}
-{% assign posts_size = posts | size %}
-{% if include.limit %}
-  {% assign posts_limit = include.limit %}
-{% else %}
-  {% assign posts_limit = posts_size %}
-{% endif %}
-
 <div class="blog-feed">
-  <div class="blog-grid">
-    {% for post in posts limit: posts_limit %}
-      <a class="blog-card" href="{{ post.url }}" target="_blank" rel="noopener noreferrer">
-        <span class="blog-tag">{{ post.tag }}</span>
-        <span class="blog-title">{{ post.title }}</span>
-        <span class="blog-read">Read on Medium <i class="fa-solid fa-arrow-right"></i></span>
-      </a>
-    {% endfor %}
-  </div>
+  {% for group in site.data.blog %}
+    <div class="blog-group">
+      <div class="blog-group-head">
+        <i class="fa-solid {{ group.icon }}"></i>
+        <span>{{ group.group }}</span>
+        <span class="blog-count">{{ group.posts | size }}</span>
+      </div>
 
-  {% if posts_size > posts_limit %}
-    <details class="blog-more">
-      <summary>show more</summary>
-      <div class="blog-grid">
-        {% for post in posts offset: posts_limit %}
+      <div class="blog-list">
+        {% for post in group.posts %}
           <a class="blog-card" href="{{ post.url }}" target="_blank" rel="noopener noreferrer">
-            <span class="blog-tag">{{ post.tag }}</span>
             <span class="blog-title">{{ post.title }}</span>
-            <span class="blog-read">Read on Medium <i class="fa-solid fa-arrow-right"></i></span>
+            {% if post.blurb %}<span class="blog-blurb">{{ post.blurb }}</span>{% endif %}
+            <i class="fa-solid fa-arrow-right blog-arrow"></i>
           </a>
         {% endfor %}
       </div>
-    </details>
-  {% endif %}
+    </div>
+  {% endfor %}
 </div>

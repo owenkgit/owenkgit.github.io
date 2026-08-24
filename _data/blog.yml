@@ -1,40 +1,50 @@
-# External blog posts (Medium). Rendered by _includes/blog.liquid on the home page.
-- title: "On-Device Machine Learning: Shrinking Models for the Real World"
-  tag: On-Device ML
-  url: https://medium.com/@owen-k/on-device-machine-learning-shrinking-models-for-the-real-world-8710a340a390
+# External blog posts (Medium), grouped by topic.
+# Rendered by _includes/blog.liquid on the home page.
+- group: Robotics &amp; Embodied AI
+  icon: fa-robot
+  posts:
+    - title: "VLA Models in Review: How Robot Policies Evolved"
+      blurb: RT-2 through π0.6 — what actually changed between generations.
+      url: https://medium.com/@owen-k/deal-with-vla-model-rt-2-pi0-pi0-5-pi0-6-eeb9fc9d37be
 
-- title: "Inside the GPU: How I Optimized Transformer CUDA Kernels"
-  tag: LLM Systems
-  url: https://medium.com/@owen-k/inside-the-gpu-how-i-optimized-transformer-cuda-kernels-36361112888b
+    - title: Memory-Augmented Robots
+      blurb: Giving policies a place to put what they have already seen.
+      url: https://medium.com/@owen-k/memory-augmented-robots-6efc180c8dbe
 
-- title: Walkthrough of Human-Robot Interaction
-  tag: HRI
-  url: https://medium.com/@owen-k/walkthrough-of-human-robot-interaction-99beac7ac5c0
+    - title: Building a Robot Teleoperation Data Pipeline from Scratch
+      blurb: Collecting usable demonstrations end to end.
+      url: https://medium.com/@owen-k/building-a-robot-teleoperation-data-pipeline-from-scratch-212399ab455e
 
-- title: "Preference-Based Reward Learning in Robotics: From Implicit Inference to Explicit Comparison"
-  tag: Reward Learning
-  url: https://medium.com/@owen-k/preference-based-reward-learning-in-robotics-from-implicit-inference-to-explicit-comparison-7103dbdd992f
+    - title: Walkthrough of Human-Robot Interaction
+      blurb: IRL, the Boltzmann model, and inferring intent from behavior.
+      url: https://medium.com/@owen-k/walkthrough-of-human-robot-interaction-99beac7ac5c0
 
-- title: Building a Robot Teleoperation Data Pipeline from Scratch
-  tag: Robot Data
-  url: https://medium.com/@owen-k/building-a-robot-teleoperation-data-pipeline-from-scratch-212399ab455e
+    - title: "Preference-Based Reward Learning in Robotics"
+      blurb: From implicit inference to explicit pairwise comparison.
+      url: https://medium.com/@owen-k/preference-based-reward-learning-in-robotics-from-implicit-inference-to-explicit-comparison-7103dbdd992f
 
-- title: Memory-Augmented Robots
-  tag: Robot Memory
-  url: https://medium.com/@owen-k/memory-augmented-robots-6efc180c8dbe
+- group: Systems &amp; Efficiency
+  icon: fa-microchip
+  posts:
+    - title: "Inside the GPU: How I Optimized Transformer CUDA Kernels"
+      blurb: Tiling, kernel fusion, and warp-level reduction.
+      url: https://medium.com/@owen-k/inside-the-gpu-how-i-optimized-transformer-cuda-kernels-36361112888b
 
-- title: "VLA Models in Review: How Robot Policies Evolved"
-  tag: VLA
-  url: https://medium.com/@owen-k/deal-with-vla-model-rt-2-pi0-pi0-5-pi0-6-eeb9fc9d37be
+    - title: "On-Device ML: Shrinking Models for the Real World"
+      blurb: Quantization, pruning, and what survives on the edge.
+      url: https://medium.com/@owen-k/on-device-machine-learning-shrinking-models-for-the-real-world-8710a340a390
 
-- title: How Do You Predict Cardiac Arrest Before It Happens?
-  tag: Medical AI
-  url: https://medium.com/@owen-k/how-do-you-predict-cardiac-arrest-before-it-happens-f6f7ef7f7340
+    - title: Building a Real-Time Talking Avatar
+      blurb: Diffusion latency, flow matching, and adaptive RAG.
+      url: https://medium.com/@owen-k/building-a-real-time-talking-avatar-from-diffusion-latency-to-flow-matching-and-adaptive-rag-6da7d4e5532d
 
-- title: Brain-Computer Interfaces
-  tag: BCI
-  url: https://medium.com/@owen-k/brain-computer-interfaces-ff7aaeab9523
+- group: Health &amp; Neuro AI
+  icon: fa-brain
+  posts:
+    - title: How Do You Predict Cardiac Arrest Before It Happens?
+      blurb: Early-warning models on continuous vital signs.
+      url: https://medium.com/@owen-k/how-do-you-predict-cardiac-arrest-before-it-happens-f6f7ef7f7340
 
-- title: "Building a Real-Time Talking Avatar: From Diffusion Latency to Flow Matching and Adaptive RAG"
-  tag: Generative AI
-  url: https://medium.com/@owen-k/building-a-real-time-talking-avatar-from-diffusion-latency-to-flow-matching-and-adaptive-rag-6da7d4e5532d
+    - title: Brain-Computer Interfaces
+      blurb: Decoding EEG without per-subject calibration.
+      url: https://medium.com/@owen-k/brain-computer-interfaces-ff7aaeab9523
