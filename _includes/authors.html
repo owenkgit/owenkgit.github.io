@@ -1,0 +1,8 @@
+{%- comment -%} Author list; bolds the site owner and mutes "…" placeholders. {%- endcomment -%}
+{%- for a in include.list -%}
+  {%- if a == site.data.profile.name -%}<strong class="me">{{ a }}</strong>
+  {%- elsif a == "…" -%}<span class="etal" title="Other authors">…</span>
+  {%- else -%}{{ a }}
+  {%- endif -%}
+  {%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}

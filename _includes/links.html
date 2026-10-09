@@ -1,0 +1,8 @@
+{%- comment -%} Inline text links, e.g. "Paper · Website · Code". {%- endcomment -%}
+{%- if include.links -%}
+<ul class="textlinks">
+  {%- for l in include.links %}
+  <li><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a></li>
+  {%- endfor %}
+</ul>
+{%- endif -%}

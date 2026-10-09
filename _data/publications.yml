@@ -1,0 +1,61 @@
+# featured: true -> large media on the right; others -> "Earlier work" with a thumbnail.
+# authors: "…" marks omitted co-authors; profile.name is bolded automatically.
+# links: the first link is also the title link.
+
+- title: Training-Free Action Correction for VLA Model Failures via Language Feedback
+  authors: [Owen Kwon, Pablo Ortega-Kral, Arthur Bucker, Jean Oh]
+  venue: arXiv 2026
+  venue_full: Preprint
+  summary: Turns one natural-language correction into action adjustments that fix execution failures of a frozen VLA policy, in simulation and on a real xArm7, without retraining.
+  featured: true
+  media: { video: /static/media/correctvla.mp4, poster: /static/media/correctvla.jpg }
+  links:
+    - { label: Paper, url: "https://arxiv.org/abs/2608.29967" }
+    - { label: Website, url: "https://correctvla.github.io/" }
+
+- title: "RIO: Flexible Real-Time Robot I/O for Cross-Embodiment Robot Learning"
+  authors: [Pablo Ortega-Kral, Eliot Xing, Arthur Fender Coelho Bucker, …, Owen Kwon, …, Jean Oh]
+  venue: RSS 2026
+  venue_full: "Robotics: Science and Systems"
+  summary: An open-source Python framework for robot control, teleoperation, data collection, and policy deployment across diverse robot hardware.
+  featured: true
+  media: { video: /static/media/rio.mp4, poster: /static/media/rio.jpg }
+  links:
+    - { label: Website, url: "https://robot-i-o.github.io/" }
+    - { label: Paper, url: "https://arxiv.org/abs/2605.11564" }
+    - { label: Code, url: "https://github.com/robot-i-o/rio" }
+
+- title: "RT-Cache: Training-Free Retrieval for Real-Time Manipulation"
+  authors: [Owen Kwon, Abraham George, Alison Bartsch, Amir Barati Farimani]
+  venue: Humanoids 2025
+  venue_full: IEEE-RAS International Conference on Humanoid Robots
+  summary: Retrieval as control. Matches the current camera frame to stored image–action snippets and replays the best one, adapting in real time by simply adding new episodes.
+  featured: true
+  media: { video: /static/media/rt-cache.mp4, poster: /static/media/rt-cache.jpg, fit: contain }
+  links:
+    - { label: Website, url: "https://rt-cache.github.io/" }
+    - { label: Paper, url: "https://arxiv.org/abs/2505.09040" }
+    - { label: Code, url: "https://github.com/owenk3/rtcache" }
+
+- title: Subject-Independent Brain–Computer Interfaces Based on Deep Convolutional Neural Networks
+  authors: [Owen Kwon, Min-Ho Lee, Cuntai Guan, Seong-Whan Lee]
+  venue: IEEE TNNLS 2020
+  media: { image: /static/media/bci.webp }
+  note: Top 0.97% most-cited in computer science (2024)
+  links:
+    - { label: Paper, url: "https://doi.org/10.1109/TNNLS.2019.2946869" }
+
+- title: Detecting Patient Deterioration Using Artificial Intelligence in a Rapid Response System
+  authors: [Kyung-Jae Cho, Owen Kwon, …, Byung-Hee Oh]
+  venue: Critical Care Medicine 2020
+  media: { image: /static/media/deterioration.webp }
+  links:
+    - { label: Paper, url: "https://doi.org/10.1097/CCM.0000000000004236" }
+
+- title: "EEG Dataset and OpenBMI Toolbox for Three BCI Paradigms: An Investigation into BCI Illiteracy"
+  authors: [Min-Ho Lee, Owen Kwon, …, Siamac Fazli, Seong-Whan Lee]
+  venue: GigaScience 2019
+  media: { image: /static/media/openbmi.webp }
+  links:
+    - { label: Paper, url: "https://doi.org/10.1093/gigascience/giz002" }
+    - { label: Code, url: "https://github.com/PatternRecognition/OpenBMI" }

@@ -1,0 +1,11 @@
+name: Owen Kwon
+location: New York, NY
+photo: /static/media/profile.jpg
+# Shown as "owenbyte at gmail dot com"; site.js builds the mailto link so the
+# plain address never appears in the HTML.
+email: { user: owenbyte, domain: gmail.com }
+github: https://github.com/owenk3
+medium: https://medium.com/@owen-k
+links:
+  - { label: GitHub, icon: github, url: "https://github.com/owenk3" }
+  - { label: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/oyeonk" }

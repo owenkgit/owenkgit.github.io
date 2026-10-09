@@ -1,0 +1,14 @@
+---
+sitemap: false
+---
+{%- comment -%} Projects now live on the home page; keep old /projects/ links (and #anchors) working. {%- endcomment -%}
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Projects · {{ site.title }}</title>
+<link rel="canonical" href="{{ '/#projects' | absolute_url }}">
+<meta name="robots" content="noindex">
+<script>location.replace("{{ '/' | relative_url }}#" + (location.hash.slice(1) || "projects"));</script>
+<meta http-equiv="refresh" content="0; url={{ '/#projects' | relative_url }}">
+<a href="{{ '/#projects' | relative_url }}">Projects have moved to the home page.</a>
+</html>

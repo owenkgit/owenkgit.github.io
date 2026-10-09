@@ -1,0 +1,34 @@
+---
+layout: base
+---
+{%- assign p = site.data.profile -%}
+<header class="masthead">
+  <img class="portrait" src="{{ p.photo | relative_url }}" alt="{{ p.name }}" width="160" height="160">
+  <div class="masthead-id">
+    <h1 class="masthead-name">{{ p.name }}</h1>
+    <p class="masthead-loc">{% include icon.html name="pin" %}{{ p.location }}</p>
+  </div>
+  <ul class="textlinks masthead-links">
+    <li>{% include email.html icon=true %}</li>
+    {%- for l in p.links %}
+    <li><a href="{{ l.url }}" target="_blank" rel="noopener">{% include icon.html name=l.icon %}{{ l.label }}</a></li>
+    {%- endfor %}
+  </ul>
+  <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
+    {%- include icon.html name="moon" class="i-moon" -%}
+    {%- include icon.html name="sun" class="i-sun" -%}
+  </button>
+</header>
+
+<section class="section" id="about" aria-label="About">
+  <div class="prose">
+{{ content }}
+  </div>
+</section>
+
+<div class="band">
+{% include writing.html %}
+{% include news.html %}
+</div>
+{% include publications.html %}
+{% include projects.html %}

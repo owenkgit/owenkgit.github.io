@@ -1,0 +1,16 @@
+{%- assign home = '/' | relative_url -%}
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ home }}">{{ site.data.profile.name }}</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="{{ home }}#writing">Writing</a>
+      <a href="{{ home }}#news">News</a>
+      <a href="{{ home }}#publications">Publications</a>
+      <a href="{{ home }}#projects">Projects</a>
+    </nav>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
+      {%- include icon.html name="moon" class="i-moon" -%}
+      {%- include icon.html name="sun" class="i-sun" -%}
+    </button>
+  </div>
+</header>

@@ -1,0 +1,3 @@
+{%- comment -%} Email as "user at domain dot com"; site.js turns it into a mailto link. {%- endcomment -%}
+{%- assign e = site.data.profile.email -%}
+<a class="{{ include.class }}" data-email="{{ e.user }}|{{ e.domain }}">{% if include.icon %}{% include icon.html name="mail" %}{% endif %}<span>{{ e.user }} at {{ e.domain | replace: '.', ' dot ' }}</span></a>

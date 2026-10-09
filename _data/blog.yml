@@ -1,7 +1,6 @@
 # External blog posts (Medium), grouped by topic.
-# Rendered by _includes/blog.liquid on the home page.
-- group: Robotics &amp; Embodied AI
-  icon: fa-robot
+# Rendered by _includes/writing.html on the home page.
+- group: Robotics & Embodied AI
   posts:
     - title: "VLA Models in Review: How Robot Policies Evolved"
       blurb: RT-2 through π0.6 — what actually changed between generations.
@@ -23,8 +22,7 @@
       blurb: From implicit inference to explicit pairwise comparison.
       url: https://medium.com/@owen-k/preference-based-reward-learning-in-robotics-from-implicit-inference-to-explicit-comparison-7103dbdd992f
 
-- group: Systems &amp; Efficiency
-  icon: fa-microchip
+- group: Systems & Efficiency
   posts:
     - title: "Inside the GPU: How I Optimized Transformer CUDA Kernels"
       blurb: Tiling, kernel fusion, and warp-level reduction.
@@ -38,8 +36,7 @@
       blurb: Diffusion latency, flow matching, and adaptive RAG.
       url: https://medium.com/@owen-k/building-a-real-time-talking-avatar-from-diffusion-latency-to-flow-matching-and-adaptive-rag-6da7d4e5532d
 
-- group: Health &amp; Neuro AI
-  icon: fa-brain
+- group: Health & Neuro AI
   posts:
     - title: How Do You Predict Cardiac Arrest Before It Happens?
       blurb: Early-warning models on continuous vital signs.
