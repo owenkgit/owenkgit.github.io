@@ -19,4 +19,4 @@ Owen Kwon's personal site, https://owenkgit.github.io (repo `owenkgit/owenkgit.g
 ## Conventions
 - Publications: `featured: true` gets large media on the right; the rest go under "Earlier work" with a thumbnail. `"…"` marks omitted authors; `profile.name` is bolded automatically.
 - Media: compress before adding (H.264 video around 500 KB or less plus a JPEG poster; WebP thumbnails 480px wide or less). Kebab-case filenames, no spaces.
-- Legacy al-folio files (`assets/`, `_pages/`, `*.liquid`, …) are unused and excluded in `_config.yml`.
+- `images/` and `ref/` are the owner's local files; they're excluded from the build. Don't commit them.
