@@ -7,7 +7,7 @@ Owen Kwon's personal site, https://owenkgit.github.io (repo `owenkgit/owenkgit.g
 - Local preview: `github-pages` v232 needs Ruby < 4.0. Run `bundle exec jekyll serve --safe`.
 
 ## Where things live
-- Bio: `index.md` (the first paragraph carries `{: .lead}`).
+- Bio: `index.md`, two plain paragraphs at the same size (bold marks the key term).
 - Content: `_data/profile.yml`, `news.yml`, `publications.yml`, `projects.yml`, `blog.yml` (Writing sections).
 - Markup: `_layouts/base.html` (sticky header bar, main, footer) and `_layouts/home.html` (intro: photo beside name, email and bio → Latest writing → News → Publications → Writing → Projects), with one `_includes/*.html` per section. `links.html` renders "PAPER · WEBSITE · CODE"; `icon.html` holds the inline SVG icons.
 - Icons: `favicon.ico` (16/32/48) and `static/icons/apple-touch-icon.png`, an "OK" monogram.
