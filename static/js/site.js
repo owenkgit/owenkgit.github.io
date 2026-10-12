@@ -1,4 +1,4 @@
-// Theme toggles flip light/dark and remember the choice.
+// Theme toggle flips light/dark and remembers the choice.
 document.querySelectorAll("[data-theme-toggle]").forEach((btn) => btn.addEventListener("click", () => {
   const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = next;
@@ -8,12 +8,6 @@ document.querySelectorAll("[data-theme-toggle]").forEach((btn) => btn.addEventLi
 // Email links are assembled here so the plain address isn't in the HTML.
 document.querySelectorAll("[data-email]").forEach((a) => { a.href = `mailto:${a.dataset.email.replace("|", "@")}`; });
 
-// The compact header slides in once the masthead is out of view (always shown on other pages).
-const header = document.querySelector(".site-header");
-const masthead = document.querySelector(".masthead");
-if (masthead) new IntersectionObserver(([e]) => header.classList.toggle("is-visible", !e.isIntersecting)).observe(masthead);
-else header?.classList.add("is-visible");
-
 // Demo videos play only while on screen; reduced-motion users get controls instead.
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const player = new IntersectionObserver((entries) => entries.forEach(({ target, isIntersecting }) =>
@@ -21,7 +15,7 @@ const player = new IntersectionObserver((entries) => entries.forEach(({ target, 
 document.querySelectorAll("video[data-autoplay]").forEach((v) =>
   reduceMotion ? (v.controls = true) : player.observe(v));
 
-// Mark the nav links of the sections in view (Writing and News sit side by side).
+// Mark the nav link of the section currently in view.
 const navLinks = [...document.querySelectorAll(".nav a")].filter((a) => a.pathname === location.pathname);
 const inView = new Set();
 const spy = new IntersectionObserver((entries) => {

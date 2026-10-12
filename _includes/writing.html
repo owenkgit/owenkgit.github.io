@@ -1,18 +1,11 @@
 <section class="section" id="writing" aria-labelledby="writing-h">
   <div class="section-head">
     <h2 class="section-title" id="writing-h">Writing</h2>
-    <a class="section-link" href="{{ site.data.profile.medium }}" target="_blank" rel="noopener">All on Medium{% include icon.html name="arrow" %}</a>
+    <a class="section-link" href="{{ site.data.profile.medium }}" target="_blank" rel="noopener">All on Medium ↗</a>
   </div>
-  <div class="writing">
-    {%- for g in site.data.blog %}
-    <div class="writing-group">
-      <h3 class="subhead">{{ g.group | escape }}</h3>
-      <ul class="writing-list">
-        {%- for post in g.posts %}
-        <li><a href="{{ post.url }}" target="_blank" rel="noopener" title="{{ post.blurb | escape }}">{{ post.title }}</a></li>
-        {%- endfor %}
-      </ul>
-    </div>
-    {%- endfor %}
+  <div class="post-list">
+    {%- for g in site.data.blog %}{% for post in g.posts %}
+    <a class="post" href="{{ post.url }}" target="_blank" rel="noopener"><span class="label">{{ g.group | escape }}</span><h3>{{ post.title }}</h3><p>{{ post.blurb }}</p></a>
+    {%- endfor %}{% endfor %}
   </div>
 </section>

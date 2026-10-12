@@ -2,34 +2,24 @@
 layout: base
 ---
 {%- assign p = site.data.profile -%}
-<header class="masthead">
-  <img class="portrait" src="{{ p.photo | relative_url }}" alt="{{ p.name }}" width="160" height="160">
-  <h1 class="masthead-name">{{ p.name }}</h1>
-  <ul class="masthead-meta">
-    <li>{% include icon.html name="cap" %}{{ p.degree }}</li>
-    <li>{% include icon.html name="pin" %}{{ p.location }}</li>
-  </ul>
-  <ul class="textlinks masthead-links">
-    <li>{% include email.html icon=true %}</li>
-    {%- for l in p.links %}
-    <li><a href="{{ l.url }}" target="_blank" rel="noopener">{% include icon.html name=l.icon %}{{ l.label }}</a></li>
-    {%- endfor %}
-  </ul>
-  <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
-    {%- include icon.html name="moon" class="i-moon" -%}
-    {%- include icon.html name="sun" class="i-sun" -%}
-  </button>
-</header>
-
-<section class="section" id="about" aria-label="About">
-  <div class="prose">
+<section class="intro" id="about" aria-labelledby="intro-name">
+  <img class="portrait" src="{{ p.photo | relative_url }}" alt="{{ p.name }}" width="280" height="280">
+  <div>
+    <h1 class="intro-name" id="intro-name">{{ p.name }}</h1>
+    <p class="label intro-meta"><span>{{ p.degree }}&nbsp;·</span> <span>{{ p.location }}</span></p>
+    <div class="prose">
 {{ content }}
+    </div>
+    <div class="intro-cta">
+      {% include email.html class="btn btn-primary" icon=true %}
+      {%- for l in p.links %}
+      <a class="btn" href="{{ l.url }}" target="_blank" rel="noopener">{% include icon.html name=l.icon %}{{ l.label }}</a>
+      {%- endfor %}
+    </div>
   </div>
 </section>
-
-<div class="band">
-{% include writing.html %}
+{% include latest-writing.html %}
 {% include news.html %}
-</div>
 {% include publications.html %}
+{% include writing.html %}
 {% include projects.html %}

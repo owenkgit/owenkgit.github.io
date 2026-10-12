@@ -3,7 +3,7 @@
   <div class="section-head"><h2 class="section-title" id="news-h">News</h2></div>
   <ol class="news">
     {%- for n in items %}
-    <li><time datetime="{{ n.date | date: '%Y-%m' }}">{{ n.date | date: '%b %Y' }}</time><p>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p></li>
+    <li><time class="label" datetime="{{ n.date | date: '%Y-%m' }}">{{ n.date | date: '%b %Y' }}</time><p>{{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p></li>
     {%- endfor %}
   </ol>
 </section>

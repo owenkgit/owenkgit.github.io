@@ -8,17 +8,20 @@ Owen Kwon's personal site, https://owenkgit.github.io (repo `owenkgit/owenkgit.g
 
 ## Where things live
 - Bio: `index.md` (the first paragraph carries `{: .lead}`).
-- Content: `_data/profile.yml`, `news.yml`, `publications.yml`, `projects.yml`, `blog.yml` (Writing section).
-- Markup: `_layouts/base.html` (compact header that slides in after the masthead, main, footer) and `_layouts/home.html` (masthead with degree and location → bio → Writing beside News → Publications → Projects), with one `_includes/*.html` per section. `links.html` renders "Paper · Website · Code"; `icon.html` holds the inline SVG icons.
-- Icons: `favicon.ico` (16/32/48) and `static/icons/apple-touch-icon.png`, an "OK" monogram in the accent blue. The portrait is a black-and-white crop.
+- Content: `_data/profile.yml`, `news.yml`, `publications.yml`, `projects.yml`, `blog.yml` (Writing sections).
+- Markup: `_layouts/base.html` (sticky header bar, main, footer) and `_layouts/home.html` (intro: photo beside name, bio and contact → Latest writing → News → Publications → Writing → Projects), with one `_includes/*.html` per section. `links.html` renders "PAPER · WEBSITE · CODE"; `icon.html` holds the inline SVG icons.
+- Icons: `favicon.ico` (16/32/48) and `static/icons/apple-touch-icon.png`, an "OK" monogram.
 - Styles, scripts, fonts, media: `static/`. Plain CSS; light/dark color tokens at the top of `static/css/site.css`.
 
 ## Design rules
-- 928px page; prose and summaries are capped at 42rem (~75 characters per line). Body text 17px (16px on phones), minimum 13px; all text at least 4.5:1 contrast in both themes.
-- Font: Inter 4.1 subset made with fontTools from the official release. Regular: weight 400–700 plus optical size; italic: weight 400–500 at text size, used only for venue lines. Characters: Latin-1, general punctuation, π. `cv05` (l with a tail) is on site-wide. To add characters, re-run `fontTools.varLib.instancer` and then `fontTools.subset` with a wider `--unicodes` list.
+- The design combines the owner's picks from four explored directions: Research Lab's intro and writing list, Story's latest-writing cards, Editorial's news and projects, and the earlier publications layout.
+- Type: headlines in serif (Newsreader), text in sans (Inter), labels, dates and links in uppercase mono (JetBrains Mono).
+- Color: light is warm paper (#f8f6f1) with an oxblood accent; dark is near-black (#0b0c0e) with amber. All text at least 4.5:1 contrast in both themes.
+- 1120px page; prose and summaries capped at 42rem (~75 characters per line). Body text 17px (16px on phones), minimum 13px.
+- Fonts are self-hosted subsets made with fontTools: Inter 4.1 (400–700 + optical size, italic only for venue lines, `cv05` l-with-tail on), Newsreader (400–500 + optical size), JetBrains Mono (Basic Latin). To add characters, re-run `fontTools.varLib.instancer` and `fontTools.subset` with a wider `--unicodes` list.
 
 ## Conventions
 - Publications: `featured: true` gets large media on the right; the rest go under "Earlier work" with a thumbnail. `"…"` marks omitted authors; `profile.name` is bolded automatically.
-- Projects are a text-only two-column grid (no thumbnails), so imagery stays reserved for publications.
+- Projects are text only (no thumbnails), so imagery stays reserved for publications.
 - Media: compress before adding (H.264 video around 500 KB or less plus a JPEG poster; WebP thumbnails 480px wide or less). Kebab-case filenames, no spaces.
 - `images/` and `ref/` are the owner's local files; they're excluded from the build. Don't commit them.
