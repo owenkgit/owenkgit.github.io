@@ -3,7 +3,7 @@ layout: base
 ---
 {%- assign p = site.data.profile -%}
 <section class="intro" id="about" aria-labelledby="intro-name">
-  <img class="portrait" src="{{ p.photo | relative_url }}" alt="{{ p.name }}" width="280" height="280">
+  <img class="portrait" src="{% include asset.html path=p.photo %}" alt="{{ p.name }}" width="280" height="280">
   <div>
     <h1 class="intro-name" id="intro-name">{{ p.name }}</h1>
     <p class="intro-email">{% include email.html icon=true %}</p>

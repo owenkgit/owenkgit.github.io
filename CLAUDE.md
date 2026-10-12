@@ -24,4 +24,5 @@ Owen Kwon's personal site, https://owenkgit.github.io (repo `owenkgit/owenkgit.g
 - Publications: `featured: true` gets large media on the right; the rest go under "Earlier work" with a thumbnail. `"…"` marks omitted authors; `profile.name` is bolded automatically.
 - Projects each have a 4:3 thumbnail (`image` in `projects.yml`, 480×360 WebP). Keep them consistent: crop photos and screenshots to the legible part; fit white-background diagrams whole on white.
 - Media: compress before adding (H.264 video around 500 KB or less plus a JPEG poster; WebP thumbnails 480px wide or less). Kebab-case filenames, no spaces.
+- Link files in `static/` through `_includes/asset.html`, which appends `?v=<build time>`. GitHub Pages lets browsers reuse a saved file for 10 minutes, so without it a file replaced under the same name shows the old version after a deploy. Fonts aren't versioned (the CSS references them directly): give a changed font a new filename.
 - `images/` and `ref/` are the owner's local files; they're excluded from the build. Don't commit them.

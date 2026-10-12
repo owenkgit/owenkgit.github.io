@@ -1,0 +1,2 @@
+{%- comment -%} URL of a file in static/, tagged with the build time so browsers load the fresh copy after every deploy. {%- endcomment -%}
+{{- include.path | relative_url -}}?v={{- site.time | date: '%s' -}}
