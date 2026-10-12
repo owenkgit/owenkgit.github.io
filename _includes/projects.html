@@ -7,8 +7,13 @@
     {%- for pr in site.data.projects %}
     {%- assign href = pr.links.first.url %}
     <article class="project" id="{{ pr.id }}">
-      <h3>{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ pr.title }}</a>{% else %}{{ pr.title }}{% endif %}</h3>
-      <p class="label">{{ pr.year }}&nbsp;· {{ pr.context }}</p>
+      <div class="project-head">
+        <img class="project-thumb" src="{{ pr.image | relative_url }}" alt="" width="480" height="360" loading="lazy" decoding="async">
+        <div>
+          <h3>{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ pr.title }}</a>{% else %}{{ pr.title }}{% endif %}</h3>
+          <p class="label">{{ pr.year }}&nbsp;· {{ pr.context }}</p>
+        </div>
+      </div>
       <p class="project-summary">{{ pr.summary }}</p>
       {% include links.html links=pr.links %}
     </article>

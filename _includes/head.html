@@ -10,10 +10,9 @@
 </script>
 <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 {% seo title=false %}
-<meta name="theme-color" content="#f8f6f1" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0b0c0e" media="(prefers-color-scheme: dark)">
-<link rel="preload" href="{{ '/static/fonts/inter-roman.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ '/static/fonts/newsreader.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="{{ '/static/fonts/source-sans.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/static/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="16x16 32x32 48x48">
 <link rel="apple-touch-icon" href="{{ '/static/icons/apple-touch-icon.png' | relative_url }}">
