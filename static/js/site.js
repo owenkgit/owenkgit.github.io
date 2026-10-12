@@ -1,10 +1,3 @@
-// Theme toggle flips light/dark and remembers the choice.
-document.querySelectorAll("[data-theme-toggle]").forEach((btn) => btn.addEventListener("click", () => {
-  const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-  document.documentElement.dataset.theme = next;
-  try { localStorage.setItem("theme", next); } catch (e) {}
-}));
-
 // Email links are assembled here so the plain address isn't in the HTML.
 document.querySelectorAll("[data-email]").forEach((a) => { a.href = `mailto:${a.dataset.email.replace("|", "@")}`; });
 

@@ -1,17 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-  // Apply the saved or system theme before first paint to avoid a flash.
-  (function () {
-    var t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    try { t = localStorage.getItem("theme") || t; } catch (e) {}
-    document.documentElement.dataset.theme = t;
-  })();
-</script>
 <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 {% seo title=false %}
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffffff">
 <link rel="preload" href="{{ '/static/fonts/source-sans.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{% include asset.html path='/static/css/site.css' %}">
 <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="16x16 32x32 48x48">

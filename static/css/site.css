@@ -1,7 +1,7 @@
 /* =============================================================================
    Tokens -> base -> layout -> components.
    Classic look: white page, one humanist sans (Source Sans 3), blue links.
-   Light/dark themes swap the color tokens via [data-theme] on <html>.
+   Light only: there is no dark theme.
    ========================================================================== */
 
 /* Source Sans 3 subset (Latin): weight 400–700; italic 400–600 for venue lines. */
@@ -18,7 +18,6 @@
   --text-3: #666666;
   --accent: #1a0dab;
   --accent-hover: #0b0080;
-  --img-filter: none;
 
   --sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --page: 70rem;
@@ -26,19 +25,6 @@
   --gutter: 1.25rem;
   --radius: 6px;
   --header-h: 3.5rem;
-}
-
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #141414;
-  --surface: #1d1d1d;
-  --line: #2e2e2e;
-  --text: #f3f3f3;
-  --text-2: #cfcfcf;
-  --text-3: #9d9d9d;
-  --accent: #8ab4f8;
-  --accent-hover: #b6d0fb;
-  --img-filter: brightness(0.9);
 }
 
 @media (min-width: 48rem) {
@@ -145,18 +131,6 @@ main.wrap { padding-bottom: 2rem; }
 @media (min-width: 48rem) {
   .nav { display: flex; }
 }
-
-.icon-btn {
-  display: inline-grid; place-items: center;
-  width: 2.25rem; height: 2.25rem; margin-right: -0.5rem; padding: 0;
-  border: 0; border-radius: var(--radius); background: none;
-  color: var(--text-3); font-size: 1.125rem; cursor: pointer;
-}
-.icon-btn:hover { color: var(--text); background: var(--surface); }
-
-.i-sun,
-:root[data-theme="dark"] .i-moon { display: none; }
-:root[data-theme="dark"] .i-sun { display: block; }
 
 /* Intro: photo beside name, email and bio ----------------------------------*/
 
@@ -281,7 +255,7 @@ main.wrap { padding-bottom: 2rem; }
   background: var(--surface);
 }
 .media > video,
-.media > img { width: 100%; height: 100%; object-fit: cover; filter: var(--img-filter); }
+.media > img { width: 100%; height: 100%; object-fit: cover; }
 
 /* Letterboxed media sit on a blurred copy of their poster instead of flat bars. */
 .media--contain { position: relative; isolation: isolate; }
@@ -349,7 +323,6 @@ main.wrap { padding-bottom: 2rem; }
   border-radius: var(--radius);
   background: var(--surface);
   object-fit: cover;
-  filter: var(--img-filter);
 }
 
 .project h3 { font-size: 1.1875rem; font-weight: 600; line-height: 1.3; }
