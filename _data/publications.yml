@@ -41,7 +41,8 @@
   authors: [Owen Kwon, Min-Ho Lee, Cuntai Guan, Seong-Whan Lee]
   venue: IEEE TNNLS 2020
   media: { image: /static/media/bci.webp }
-  note: Top 0.97% most-cited in computer science (2024)
+  # Rank from IEEE's announcement of the 2020 JCR (cn.ieee.org, July 2021); quoted because of the "#".
+  note: "#1 in JCR Computer Science, Theory and Methods"
   links:
     - { label: Paper, url: "https://doi.org/10.1109/TNNLS.2019.2946869" }
 
