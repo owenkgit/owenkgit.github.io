@@ -1,13 +1,11 @@
-# Newest first. `id` is the anchor (/#id). media: video+poster | image | icon.
-# links: the first link is also the title link.
+# Newest first. `id` is the anchor (/#id). The first link is also the title link.
 
 - id: auto-simulation
   year: 2026
   context: Robotics · Agents
   title: Automated Robot Simulation Pipeline
-  summary: An agent that analyzes failed simulation episodes, finds root causes, and keeps rewriting VLM instructions to improve the next run. Inspired by Karpathy's vision of automated AI research.
+  summary: An agent that analyzes failed simulation episodes, identifies their root causes, and iteratively rewrites VLM instructions to improve each subsequent run.
   tags: [VLM, LIBERO, Self-improving agents]
-  media: { video: /static/media/autosim.mp4, poster: /static/media/autosim.jpg }
   links:
     - { label: GitHub, url: "https://github.com/owenk3/autosimulation" }
 
@@ -15,9 +13,8 @@
   year: 2026
   context: Robot learning · CMU 16-867
   title: Preference-Based Reward Learning & Human–Robot Interaction
-  summary: How robots learn what people want. Recovers hidden preferences from demonstrations with Bayesian inference, then learns rewards from pairwise comparisons with Bradley–Terry, the objective behind RLHF.
+  summary: Recovers hidden human preferences from demonstrations with Bayesian inference, then learns reward models from pairwise comparisons with Bradley–Terry, the objective behind RLHF.
   tags: [Inverse RL, Bayesian inference, Bradley–Terry, MetaWorld]
-  media: { icon: users }
   links:
     - { label: HRI walkthrough, url: "https://medium.com/@owen-k/walkthrough-of-human-robot-interaction-99beac7ac5c0" }
     - { label: Reward learning, url: "https://medium.com/@owen-k/preference-based-reward-learning-in-robotics-from-implicit-inference-to-explicit-comparison-7103dbdd992f" }
@@ -28,7 +25,6 @@
   title: Optimizing Transformer CUDA Kernels
   summary: Custom Softmax and LayerNorm kernels with warp-level reductions, FlashAttention with CUDA tiling in MiniTorch, and a multi-teacher distillation pipeline.
   tags: [CUDA, FlashAttention, Kernel fusion, Distillation]
-  media: { image: /static/media/cuda-kernels.webp }
   links:
     - { label: Article, url: "https://medium.com/@owen-k/inside-the-gpu-how-i-optimized-transformer-cuda-kernels-36361112888b" }
 
@@ -38,7 +34,6 @@
   title: "On-Device ML: Shrinking Models for the Real World"
   summary: Benchmarked quantization and pruning against a roofline model to separate memory- from compute-bound bottlenecks, profiling YOLOv5s on a Jetson Nano.
   tags: [Quantization, Pruning, TensorRT, Jetson Nano]
-  media: { image: /static/media/on-device.webp }
   links:
     - { label: Article, url: "https://medium.com/@owen-k/on-device-machine-learning-shrinking-models-for-the-real-world-8710a340a390" }
 
@@ -48,7 +43,6 @@
   title: LLM Agent Applications
   summary: GPT-based services for brand-tuned ad copy, multilingual document summarization, PDF and YouTube summaries, content creation, and scheduling.
   tags: [Python, Streamlit, OpenAI API]
-  media: { image: /static/media/llm-apps.webp }
   links:
     - { label: GitHub, url: "https://github.com/owenk3/ChatGPT-application-python" }
 
@@ -58,7 +52,6 @@
   title: Data Ingestion & AI Infrastructure
   summary: Multi-model serving and streaming data platform. 10+ models on Triton, 100M+ events a day through Kafka and Spark Streaming, Kubernetes autoscaling on GCP, 99.9% uptime.
   tags: [Triton, Kafka, Spark, Kubernetes, GCP, Airflow]
-  media: { image: /static/media/ai-infra.webp }
 
 - id: avatar
   year: 2023
@@ -66,7 +59,6 @@
   title: Real-Time 3D Conversational Avatar
   summary: A real-time agent combining an LLM, TTS, and 3D animation. Cut diffusion-based animation inference from 10 s to 0.1 s and served the stack on Triton across GCP and Azure.
   tags: [PyTorch, Triton, DeepSpeed, LangChain, Kubernetes]
-  media: { image: /static/media/avatar.webp }
   links:
     - { label: Article, url: "https://medium.com/@owen-k/building-a-real-time-talking-avatar-from-diffusion-latency-to-flow-matching-and-adaptive-rag-6da7d4e5532d" }
 
@@ -76,4 +68,3 @@
   title: Automated Learning System
   summary: Contributed to an AutoML platform covering automated feature engineering, model selection, hyperparameter tuning, and ensembling for production deployment.
   tags: [scikit-learn, XGBoost, LightGBM, Optuna]
-  media: { image: /static/media/automl.webp }

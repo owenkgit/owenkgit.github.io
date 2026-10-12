@@ -4,10 +4,11 @@ layout: base
 {%- assign p = site.data.profile -%}
 <header class="masthead">
   <img class="portrait" src="{{ p.photo | relative_url }}" alt="{{ p.name }}" width="160" height="160">
-  <div class="masthead-id">
-    <h1 class="masthead-name">{{ p.name }}</h1>
-    <p class="masthead-loc">{% include icon.html name="pin" %}{{ p.location }}</p>
-  </div>
+  <h1 class="masthead-name">{{ p.name }}</h1>
+  <ul class="masthead-meta">
+    <li>{% include icon.html name="cap" %}{{ p.degree }}</li>
+    <li>{% include icon.html name="pin" %}{{ p.location }}</li>
+  </ul>
   <ul class="textlinks masthead-links">
     <li>{% include email.html icon=true %}</li>
     {%- for l in p.links %}

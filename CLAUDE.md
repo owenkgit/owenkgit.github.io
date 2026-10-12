@@ -9,7 +9,8 @@ Owen Kwon's personal site, https://owenkgit.github.io (repo `owenkgit/owenkgit.g
 ## Where things live
 - Bio: `index.md` (the first paragraph carries `{: .lead}`).
 - Content: `_data/profile.yml`, `news.yml`, `publications.yml`, `projects.yml`, `blog.yml` (Writing section).
-- Markup: `_layouts/base.html` (compact header that slides in after the masthead, main, footer) and `_layouts/home.html` (masthead → About → Writing beside News → Publications → Projects), with one `_includes/*.html` per section. `links.html` renders "Paper · Website · Code"; `icon.html` holds the inline SVG icons.
+- Markup: `_layouts/base.html` (compact header that slides in after the masthead, main, footer) and `_layouts/home.html` (masthead with degree and location → bio → Writing beside News → Publications → Projects), with one `_includes/*.html` per section. `links.html` renders "Paper · Website · Code"; `icon.html` holds the inline SVG icons.
+- Icons: `favicon.ico` (16/32/48) and `static/icons/apple-touch-icon.png`, an "OK" monogram in the accent blue. The portrait is a black-and-white crop.
 - Styles, scripts, fonts, media: `static/`. Plain CSS; light/dark color tokens at the top of `static/css/site.css`.
 
 ## Design rules
@@ -18,5 +19,6 @@ Owen Kwon's personal site, https://owenkgit.github.io (repo `owenkgit/owenkgit.g
 
 ## Conventions
 - Publications: `featured: true` gets large media on the right; the rest go under "Earlier work" with a thumbnail. `"…"` marks omitted authors; `profile.name` is bolded automatically.
+- Projects are a text-only two-column grid (no thumbnails), so imagery stays reserved for publications.
 - Media: compress before adding (H.264 video around 500 KB or less plus a JPEG poster; WebP thumbnails 480px wide or less). Kebab-case filenames, no spaces.
 - `images/` and `ref/` are the owner's local files; they're excluded from the build. Don't commit them.

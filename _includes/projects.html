@@ -3,18 +3,15 @@
     <h2 class="section-title" id="projects-h">Projects</h2>
     <a class="section-link" href="{{ site.data.profile.github }}" target="_blank" rel="noopener">GitHub{% include icon.html name="arrow" %}</a>
   </div>
-  <div class="entries">
+  <div class="project-grid">
     {%- for pr in site.data.projects %}
     {%- assign href = pr.links.first.url %}
-    <article class="entry entry--thumb" id="{{ pr.id }}">
-      {% include media.html media=pr.media href=href %}
-      <div class="entry-body">
-        <h3 class="entry-title">{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ pr.title }}</a>{% else %}{{ pr.title }}{% endif %}</h3>
-        <p class="venue">{{ pr.year }}&nbsp;· {{ pr.context }}</p>
-        <p class="entry-summary">{{ pr.summary }}</p>
-        <p class="tags">{{ pr.tags | join: "&nbsp;· " }}</p>
-        {% include links.html links=pr.links %}
-      </div>
+    <article class="project" id="{{ pr.id }}">
+      <h3 class="entry-title">{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ pr.title }}</a>{% else %}{{ pr.title }}{% endif %}</h3>
+      <p class="venue">{{ pr.year }}&nbsp;· {{ pr.context }}</p>
+      <p class="entry-summary">{{ pr.summary }}</p>
+      <p class="tags">{{ pr.tags | join: "&nbsp;· " }}</p>
+      {% include links.html links=pr.links %}
     </article>
     {%- endfor %}
   </div>

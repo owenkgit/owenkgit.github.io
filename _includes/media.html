@@ -1,16 +1,14 @@
 {%- comment -%}
-  Thumbnail for an entry. media: { video, poster } | { image } | { icon }, optional fit: contain.
+  Thumbnail for a publication. media: { video, poster } | { image }, optional fit: contain.
   Decorative duplicate of the title link, so it is hidden from assistive tech and tab order.
 {%- endcomment -%}
 {%- assign m = include.media -%}
-{%- capture cls %}media{% if m.fit == 'contain' %} media--contain{% endif %}{% if m.icon %} media--icon{% endif %}{% endcapture -%}
+{%- capture cls %}media{% if m.fit == 'contain' %} media--contain{% endif %}{% endcapture -%}
 {%- capture body -%}
   {%- if m.video -%}
     <video muted loop playsinline preload="none" data-autoplay poster="{{ m.poster | relative_url }}"><source src="{{ m.video | relative_url }}" type="video/mp4"></video>
-  {%- elsif m.image -%}
+  {%- else -%}
     <img src="{{ m.image | relative_url }}" alt="" loading="lazy" decoding="async">
-  {%- elsif m.icon -%}
-    {%- include icon.html name=m.icon -%}
   {%- endif -%}
 {%- endcapture -%}
 {%- comment -%} Letterboxed media get a blurred copy of the poster behind them instead of flat bars. {%- endcomment -%}
