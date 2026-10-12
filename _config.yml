@@ -1,8 +1,8 @@
 # Site ------------------------------------------------------------------------
 title: Owen Kwon
 description: >-
-  Owen Kwon works on corrigibility in learned robot policies: correcting a
-  policy's behavior while it runs, without retraining. MS, Carnegie Mellon University.
+  Owen Kwon's research focuses on making learned robot policies steerable
+  through human intervention, and on the human data behind them.
 url: https://owenkgit.github.io
 lang: en
 author: Owen Kwon
