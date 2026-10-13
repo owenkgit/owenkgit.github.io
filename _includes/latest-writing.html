@@ -5,10 +5,9 @@
     <h2 class="section-title" id="latest-h">Latest writing</h2>
     <a class="section-link" href="#writing">All {{ total }} posts ↓</a>
   </div>
-  <div class="cards3">
-    {%- for g in site.data.blog %}
-    {%- assign post = g.posts.first %}
+  <div class="latest-cards">
+    {%- for g in site.data.blog %}{% for post in g.posts %}{% if post.latest %}
     <a class="wcard" href="{{ post.url }}" target="_blank" rel="noopener"><span class="label">{{ g.group | escape }}</span><h3>{{ post.title }}</h3><p>{{ post.blurb }}</p></a>
-    {%- endfor %}
+    {%- endif %}{% endfor %}{% endfor %}
   </div>
 </section>

@@ -1,8 +1,9 @@
 # External blog posts (Medium), grouped by topic.
-# Rendered by _includes/writing.html on the home page.
+# Rendered by _includes/writing.html; `latest: true` also shows a post in Latest writing.
 - group: Robotics & Embodied AI
   posts:
     - title: "VLA Models in Review: How Robot Policies Evolved"
+      latest: true
       blurb: RT-2 through π0.6 — what actually changed between generations.
       url: https://medium.com/@owen-k/deal-with-vla-model-rt-2-pi0-pi0-5-pi0-6-eeb9fc9d37be
 
@@ -19,12 +20,14 @@
       url: https://medium.com/@owen-k/walkthrough-of-human-robot-interaction-99beac7ac5c0
 
     - title: "Preference-Based Reward Learning in Robotics"
+      latest: true
       blurb: From implicit inference to explicit pairwise comparison.
       url: https://medium.com/@owen-k/preference-based-reward-learning-in-robotics-from-implicit-inference-to-explicit-comparison-7103dbdd992f
 
 - group: Systems & Efficiency
   posts:
     - title: "Inside the GPU: How I Optimized Transformer CUDA Kernels"
+      latest: true
       blurb: Tiling, kernel fusion, and warp-level reduction.
       url: https://medium.com/@owen-k/inside-the-gpu-how-i-optimized-transformer-cuda-kernels-36361112888b
 
@@ -39,6 +42,7 @@
 - group: Health & Neuro AI
   posts:
     - title: How Do You Predict Cardiac Arrest Before It Happens?
+      latest: true
       blurb: Early-warning models on continuous vital signs.
       url: https://medium.com/@owen-k/how-do-you-predict-cardiac-arrest-before-it-happens-f6f7ef7f7340
 
