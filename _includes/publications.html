@@ -1,27 +1,25 @@
-<section class="section" id="publications" aria-labelledby="pubs-h">
-  <div class="section-head"><h2 class="section-title" id="pubs-h">Publications</h2></div>
-  <div class="entries">
+<section class="row" id="publications" aria-labelledby="publications-h">
+  <h2 class="row-label" id="publications-h">Publications</h2>
+  <div>
     {%- for pub in site.data.publications %}{% if pub.featured %}
-    <article class="entry entry--feature">
+    <article class="pub">
       {% include media.html media=pub.media href=pub.links.first.url %}
-      <div class="entry-body">
-        <h3 class="entry-title"><a href="{{ pub.links.first.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></h3>
+      <div>
+        <h3 class="pub-title"><a href="{{ pub.links.first.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></h3>
         <p class="authors">{% include authors.html list=pub.authors %}</p>
         <p class="venue">{% if pub.venue_full %}{{ pub.venue_full }}&nbsp;· {% endif %}{{ pub.venue }}</p>
-        <p class="entry-summary">{{ pub.summary }}</p>
+        <p class="summary">{{ pub.summary }}</p>
         {% include links.html links=pub.links %}
       </div>
     </article>
     {%- endif %}{% endfor %}
-  </div>
 
-  <h3 class="label subhead">Earlier work · Healthcare &amp; BCI</h3>
-  <div class="entries">
+    <h3 class="sub">Earlier work · Healthcare &amp; BCI</h3>
     {%- for pub in site.data.publications %}{% unless pub.featured %}
-    <article class="entry entry--thumb">
+    <article class="pub pub--small">
       {% include media.html media=pub.media href=pub.links.first.url %}
-      <div class="entry-body">
-        <h4 class="entry-title"><a href="{{ pub.links.first.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></h4>
+      <div>
+        <h4 class="pub-title"><a href="{{ pub.links.first.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></h4>
         <p class="authors">{% include authors.html list=pub.authors %}</p>
         <p class="venue">{{ pub.venue }}{% if pub.note %}&nbsp;· <span class="note">{{ pub.note }}</span>{% endif %}</p>
         {% include links.html links=pub.links %}

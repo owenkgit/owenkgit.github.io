@@ -1,21 +1,16 @@
-<section class="section" id="projects" aria-labelledby="projects-h">
-  <div class="section-head">
-    <h2 class="section-title" id="projects-h">Projects</h2>
-    <a class="section-link" href="{{ site.data.profile.github }}" target="_blank" rel="noopener">GitHub ↗</a>
-  </div>
-  <div class="project-grid">
+<section class="row" id="projects" aria-labelledby="projects-h">
+  <h2 class="row-label" id="projects-h">Projects</h2>
+  <div>
     {%- for pr in site.data.projects %}
     {%- assign href = pr.links.first.url %}
-    <article class="project" id="{{ pr.id }}">
-      <div class="project-head">
-        <img class="project-thumb" src="{% include asset.html path=pr.image %}" alt="" width="480" height="360" loading="lazy" decoding="async">
-        <div>
-          <h3>{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ pr.title }}</a>{% else %}{{ pr.title }}{% endif %}</h3>
-          <p class="label">{{ pr.year }}&nbsp;· {{ pr.context }}</p>
-        </div>
+    <article class="proj" id="{{ pr.id }}">
+      <img class="proj-thumb" src="{% include asset.html path=pr.image %}" alt="" width="480" height="360" loading="lazy" decoding="async">
+      <div>
+        <h3 class="pub-title">{% if href %}<a href="{{ href }}" target="_blank" rel="noopener">{{ pr.title }}</a>{% else %}{{ pr.title }}{% endif %}</h3>
+        <p class="topic">{{ pr.year }}&nbsp;· {{ pr.context }}</p>
+        <p class="summary">{{ pr.summary }}</p>
+        {% include links.html links=pr.links %}
       </div>
-      <p class="project-summary">{{ pr.summary }}</p>
-      {% include links.html links=pr.links %}
     </article>
     {%- endfor %}
   </div>

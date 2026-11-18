@@ -9,16 +9,15 @@ Owen Kwon's personal site, https://owenkgit.github.io (repo `owenkgit/owenkgit.g
 ## Where things live
 - Bio: `index.md`, two plain paragraphs at the same size (bold marks the key term).
 - Content: `_data/profile.yml`, `news.yml`, `publications.yml`, `projects.yml`, `blog.yml` (Writing sections).
-- Markup: `_layouts/base.html` (sticky header bar, main, footer) and `_layouts/home.html` (intro: photo beside name, email and bio → Latest writing → News → Publications → Writing → Projects), with one `_includes/*.html` per section. `links.html` renders "PAPER · WEBSITE · CODE"; `icon.html` holds the inline SVG icons.
-- Icons: `favicon.ico` (16/32/48) and `static/icons/apple-touch-icon.png`, an "OK" monogram.
+- Markup: `_layouts/base.html` (main and footer; no header bar) and `_layouts/home.html` (intro: name, email and bio left, round photo right → Latest writing → News → Publications → Writing → Projects). Each section is one `_includes/*.html` rendering a `.row`: its name in the left column, content on the right. `links.html` renders "Paper · Website · Code".
+- Icons: `favicon.ico` (16/32/48) and `static/icons/apple-touch-icon.png`, an "OK" monogram in the accent red; `static/media/og.jpg` is the link-preview image in the same style.
 - Styles, scripts, fonts, media: `static/`. Plain CSS; color tokens at the top of `static/css/site.css`.
 
 ## Design rules
-- Layout combines the owner's picks from four explored directions: Research Lab's intro and writing list, Story's latest-writing cards, Editorial's news and two-column projects, and the earlier publications layout.
-- "Classic" look, chosen to avoid the generic AI-template style (cream paper, serif headlines, uppercase mono labels): white page, one humanist sans (Source Sans 3) everywhere, classic blue underlined links, normal-case gray labels.
-- Color: light only, by the owner's choice (no dark mode or theme toggle): #ffffff with #1a0dab links. All text at least 4.5:1 contrast.
-- 1120px page; prose and summaries capped at 42rem (~75 characters per line). Body text 18px (17px on phones), minimum 15px for labels.
-- Fonts: self-hosted Source Sans 3 subsets made with fontTools (roman 400–700, italic 400–600 for venue lines). To add characters, re-run `fontTools.varLib.instancer` and `fontTools.subset` with a wider `--unicodes` list.
+- Design "F", chosen by the owner from six researched options: B's introduction (classic academic: text left, round photo right) above C's margin-label sections (after Toru Lin's site and CV layouts). Avoid the generic AI-template look (cream paper, serif headlines, uppercase mono labels).
+- Color: light only, by the owner's choice (no dark mode or theme toggle): white page, #161616 text, deep red #a6192e (a nod to CMU) for section names and links. All text at least 4.5:1 contrast.
+- 900px page; 150px section-name column. Body text 17px, minimum 14.5px for small gray lines. On phones (<720px) section names sit above their content and the photo moves above the name.
+- Fonts: self-hosted IBM Plex Sans subsets made with fontTools from Google Fonts' files: `plex.woff2` (Latin, weight 400–600), `plex-italic.woff2` (400, venue lines) and `plex-greek.woff2` (Greek letters such as π, fetched only when used). To add characters, re-run `fontTools.varLib.instancer` and `fontTools.subset` with a wider `--unicodes` list.
 
 ## Conventions
 - Publications: `featured: true` gets large media on the right; the rest go under "Earlier work" with a thumbnail. `"…"` marks omitted authors; `profile.name` is bolded automatically.

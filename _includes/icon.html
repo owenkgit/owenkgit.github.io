@@ -1,7 +1,0 @@
-{%- comment -%} Inline stroke icons (Lucide geometry). Usage: include icon.html name="github" class="..." {%- endcomment -%}
-{%- capture paths -%}
-{%- case include.name -%}
-{%- when 'mail' -%}<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-{%- endcase -%}
-{%- endcapture -%}
-<svg class="icon {{ include.class }}" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ paths }}</svg>

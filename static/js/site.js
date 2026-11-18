@@ -7,12 +7,3 @@ const player = new IntersectionObserver((entries) => entries.forEach(({ target, 
   isIntersecting ? target.play().catch(() => {}) : target.pause()), { threshold: 0.25 });
 document.querySelectorAll("video[data-autoplay]").forEach((v) =>
   reduceMotion ? (v.controls = true) : player.observe(v));
-
-// Mark the nav link of the section currently in view.
-const navLinks = [...document.querySelectorAll(".nav a")].filter((a) => a.pathname === location.pathname);
-const inView = new Set();
-const spy = new IntersectionObserver((entries) => {
-  entries.forEach(({ target, isIntersecting }) => inView[isIntersecting ? "add" : "delete"](target.id));
-  if (inView.size) navLinks.forEach((a) => inView.has(a.hash.slice(1)) ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current"));
-}, { rootMargin: "-40% 0px -55% 0px" });
-navLinks.forEach((a) => { const s = document.getElementById(a.hash.slice(1)); if (s) spy.observe(s); });
