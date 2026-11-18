@@ -1,8 +1,8 @@
 # Site ------------------------------------------------------------------------
 title: Owen Kwon
 description: >-
-  Owen Kwon's research focuses on making learned robot policies steerable
-  by people while they run, and on human feedback data for robot learning.
+  Owen Kwon's research focuses on steering pre-trained robot policies with
+  human intent at test time, and on how robots carry corrections to new tasks.
 url: https://owenkgit.github.io
 lang: en
 author: Owen Kwon
